@@ -1,4 +1,4 @@
-# Python libraries that we need to import for our bot
+#Importamos librerias de Python necesarias para enviar mensajes aleatorios
 import random
 
 # Importamos Flask el framework y pymessenger para uso del Bot
@@ -36,7 +36,7 @@ def receive_message():
                     if message['message'].get('attachments'):
                         response_sent_nontext = get_message()
                         send_message(recipient_id, response_sent_nontext)
-    return "Message Processed"
+    return "Mensaje Enviado"
 
 
 def verify_fb_token(token_sent):
